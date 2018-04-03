@@ -1,0 +1,52 @@
+ <div data-role="view" data-title="Registro Vehículos" data-layout="main" data-model="app.mntVehiculos" data-show="app.mntVehiculos.onShow"
+    data-after-show="app.mntVehiculos.afterShow" id="mntVehiculosScreen" class="screen" data-init="app.mntVehiculos.inicializa"
+    data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+            <h1><b><span id="NumeroChasisRV" class="km-view-subtitle"></span></b></h1>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" href="components/MenuKia/view.html" aria-hidden="true" data-role="button"></a>
+        </div>
+    </header>
+    <div class="content" style="padding: 10px 15px;text-align: center">
+        <div class="container">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-xs-12"><b>Asignar Vehículo</b></div>
+                </div>
+            </div>
+        </div>
+        <div id="nuevochasisview"></div>
+    </div>
+    <div class="content" style="padding: 10px 15px;text-align: center">
+        <div class="container">
+            <div class="form-horizontal">
+                <div class="form-group"><b>Agregar Vehículo</b>
+                    <div class="col-xs-12"> <input type="text" class="form-control" onkeyup="javascript:this.value=this.value.toUpperCase();" id="VIN"
+                            placeholder="Vehículo"> <input type="text" class="form-control" onkeyup="javascript:this.value=this.value.toUpperCase();"
+                            id="AliasAD" placeholder="Alias"> <button id="btn_activar" class="btn btn-danger fondoRojo" onclick="llamargrabarVH();">Grabar</button>                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="chasisview"></div>
+    </div>
+</div>
+<style>
+.btnRojoDelete {
+    background: url("resources/borrar.png");
+    background-repeat: no-repeat;
+    	background-color: #bb162b; 
+	border-radius: 5px;
+	border: none;
+	color: #bb162b !important;
+	cursor: pointer;
+	font-size: 1px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 1px;
+  position: relative; 
+ box-sizing: border-box; 
+ transition: all 500ms ease; 
+}
+</style>

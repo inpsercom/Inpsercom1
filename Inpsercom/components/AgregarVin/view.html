@@ -1,0 +1,33 @@
+<div data-role="view" data-title="Pre Factura" data-layout="main" data-model="app.mntRegistroVin" data-show="app.mntRegistroVin.onShow" data-after-show="app.mntRegistroVin.afterShow" id="mntRegistroVinScreen" data-before-show="app.mntRegistroVin.inicializa">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-role="view-title"></span>
+            <h1>
+                <b>
+                    <span id="NumeroChasisPF" class="km-view-subtitle"></span>
+                </b>
+            </h1>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" href="components/miKia/view.html" aria-hidden="true" data-role="button"></a>
+        </div>
+    </header>
+    <form>
+        <div id="logoPR" class="centrar"> <img id="autokia1" src="resources/LogoKIa1.png" style="border:3px solid white"> </div>
+        <div id="btnPDF"> <iframe id="ifmPrefactura"></iframe></div>
+    </form>
+    <footer>
+        <div id="pdfPRE">
+            <p style="text-align:justify; font-family:verdana; color:#bb162b; font-size:80%;"> Está de acuerdo con la pre factura para proceder a emitir su factura definitiva para agilizar el proceso de entrega
+                del vehí­culo? click
+                <a onclick="llamarprefacturaEN();">
+                    <spam style="font-size:100%">&nbsp; AQUI</spam>
+                </a>
+                <a id="pdfPREF" onclick="prefac()">
+                    <spam style="font-size:120%; float:right">Reenviar</spam>
+                </a>
+            </p>
+            </div>
+    </footer>
+</div>
+<!--<iframe src="https://docs.google.com/viewer?url=http://200.31.10.92:8092/ASIAU_02_02_201707413.pdf&embedded=true" style="width:400px; height:500px;"></iframe>-->
+    

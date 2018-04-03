@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<div data-role="view" data-title="Detalle OT" data-layout="main" data-model="app.detalleOT" data-show="app.detalleOT.onShow"
+         data-after-show="app.detalleOT.afterShow" id="detalleOTScreen" class="screen" data-before-show="app.detalleOT.inicializa">
+        <header data-role="header">
+            <div data-role="navbar" class="header-text">
+                <span data-role="view-title"></span>
+                <h1><b><span id="NumeroChasisDOT" class="km-view-subtitle"></span></b></h1>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left"
+                   data-icon="drawer-button"></a>
+                <a data-align="right" class="fa fa-reply" onclick="regresaDetalleOT();" aria-hidden="true" data-role="button"></a>
+            </div>
+        </header>
+
+    <div data-role="content" data-init="onInit" data-stretch="true">
+        </br>
+        <!-- style="background-image: url('resources/CarMenu.jpg');"-->
+        <div id="detalleOT"></div>
+        </br>
+    </div>
+
+        <footer>
+            <div data-role="content">
+                &nbsp;<b>Observación:</b>
+                <p id="txtDetalle"></p>
+            </div>
+        </footer>
+</div>

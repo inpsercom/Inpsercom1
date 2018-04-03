@@ -1,0 +1,34 @@
+<div data-role="view" data-title="Control vehículo " data-layout="main" data-model="app.miKia4" data-show="app.miKia4.onShow" data-after-show="app.miKia4.afterShow"
+    id="miKia4Screen" class="screen" data-stretch="true">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+            <h1><b><span id="NoOrdenDB" class="km-view-subtitle"></span></b></h1>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" onclick="regresar()" aria-hidden="true" data-role="button"></a>
+        </div>
+    </header>
+    <div class="container fondoRojo">
+        <div class="row" style="padding-top:54px; padding-bottom:54px;">
+            <div class="col-xs-6 text-center">
+                <a onclick="llamarbloqueo();" class="icon-wrapper"> <span class="fa-stack fa-lg ">
+              <i class="mi-icon fa-stack-2x "></i>
+              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span> </a> <span class="icon-text clearfix ">Bloqueo</span> </div>
+            <div class="col-xs-6 text-center">
+                <a onclick="llamardesbloqueo();" class="icon-wrapper"> <span class="fa-stack fa-lg ">
+              <i class="mi-icon fa-stack-2x "></i>
+              <i class="fa fa-unlock fa-stack-1x fa-inverse"></i>
+            </span> </a> <span class="icon-text clearfix ">Desbloqueo</span> </div>
+            <div class="col-xs-6 text-center">
+                <a onclick="llamarapertura();" class="icon-wrapper"> <span class="fa-stack fa-lg ">
+              <i class="mi-icon fa-stack-2x "></i>
+              <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </span> </a> <span class="icon-text clearfix ">Apertura Remota</span> </div>
+        </div>
+    </div>
+</div>
+<style>
+    .fondoRojo {
+        background-color: #bb162b;
+    }
+</style>

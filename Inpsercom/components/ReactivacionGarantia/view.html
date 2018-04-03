@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<div data-role="view" data-title="Reactivar Confirmar Garantía" data-layout="main" data-model="app.reactivacionG" data-show="app.reactivacionG.onShow" data-after-show="app.reactivacionG.afterShow" id="reactivacionGScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-role="view-title"></span>
+            <h1><b><span id="NumeroChasisGA" class="km-view-subtitle"></span></b></h1>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" href="components/EstadoMantenimiento/view.html" aria-hidden="true" data-role="button"></a>
+
+        </div>
+    </header>
+
+    <div class="content" style=" padding: 30px 20px;">
+        <div class="container">
+            <form class="form-horizontal" id="registro">
+                <div class="centrar"><b><spam style="color:red;text-align:center;">Esta seguro que desea Reactivar su garantía</spam></b></div>
+                <!--<div class="form-group">
+                    <div class="col-xs-12"> <input type="email" class="form-control" id="recuperar_email" autofocus placeholder="Email Registrado"> </div>
+                </div>-->    
+            </form>
+            <div class="form-group" style="text-align:center"> <button class="btn btn-danger fondoRojoLogin" data-role="button" onclick="llamarmailG();">Confirmar</button> </div>
+        </div>
+    </div>
+
+    <!-- START_CUSTOM_CODE_miKia5 -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_miKia5 -->
+</div>

@@ -1,0 +1,25 @@
+<div data-role="view" data-title="Reporte Ubicación Vehículo" data-layout="main" data-model="app.miKia3" data-show="app.miKia3.onShow" data-after-show="app.miKia3.afterShow"
+    id="miKia3Screen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"> <span data-role="view-title"></span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left"
+                data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" onclick="regreso()" aria-hidden="true"
+                data-role="button"></a>
+            <a data-align="lefth" class="fa fa-refresh" onclick="reload()" aria-hidden="true" data-role="button"></a>
+            <h1><b><span id="NoOrdenUB" class="km-view-subtitle"></span></b></h1>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_miKia3 -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <ul class="form-content" data-role="listview" data-style="inset">
+        <li id="objlist" class="form-content-item">
+            <div id="map" class="mapView" style="height: Auto"></div>
+        </li>
+    </ul>
+    <footer>
+    <div><b><img id="flechaM" src="resources/flechaN.png"></b></span> auto detenido
+    &nbsp;&nbsp;&nbsp;&nbsp;<b><img id="flechaM" src="resources/flechaNA.png"></b></span> auto en movimiento</div>
+    </footer>
+</div>
+<!-- END_CUSTOM_CODE_miKia3 -->

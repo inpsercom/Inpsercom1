@@ -1,0 +1,94 @@
+<div data-role="view" data-title="Regitro Cliente" data-layout="main" data-model="app.miKia6" data-show="app.miKia6.onShow" data-after-show="app.miKia6.afterShow"
+    id="miKia6Screen" class="screen" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"> <span data-bind="text: strings.miKia6.title"></span>
+            <a data-align="right" class="fa fa-reply" href="components/home/view.html" aria-hidden="true" data-role="button"></a>
+        </div>
+    </header>
+    <div class="fondoRojoLogin">
+        <div class="content" style=" padding: 30px 20px;" scrool>
+            <div class="container">
+                <form class="form-horizontal" id="registro">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="text" style="color:white;" class="form-control" id="identificacion" placeholder="Identificación"
+                                   required="true" onblur="personaGetReg();">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="text" style="color:white;" class="form-control" id="Nombres" placeholder="Nombres" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="text" style="color:white;" class="form-control" id="Apellidos" placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="email" style="color:white;" class="form-control" id="email" placeholder="Email" onblur="ValidaMailRegistro();">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="search" style="color:white;text-transform:uppercase;" 
+                                   class="form-control" id="Chasis" placeholder="Vehículo (Chasis 17 digitos)"> <!--onkeyup="javascript:this.value=this.value.toUpperCase();"-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="text" style="color:white;text-transform:uppercase;" 
+                                   class="form-control" id="Alias" placeholder="Alias">  <!--onkeyup="javascript:this.value=this.value.toUpperCase();"-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="Fields" style="width: 100%; color:black;" id="FechaNacimiento" placeholder="Fecha de nacimiento"
+                                   onkeyup="javascript:this.value='';">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="number" style="color:white;" class="form-control" id="celular" placeholder="Celular"
+                                   onblur="ValidaCelular();">
+                        </div>
+                    </div>
+                    <!--<div class="form-group">
+            <div class="col-xs-12"> <input type="number" class="form-control" id="numorden" placeholder="Número orden"> </div>
+        </div>-->
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input type="password" style="color:white;" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12"> <input type="password" style="color:white;" class="form-control" id="repassword" placeholder="Confirmar contraseña"> </div>
+                        <!--onkeyup="ValidaPassword();"-->
+                    </div>
+                    <div class="form-group">
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td valign="top"><div class="col-xs-12"> <input type="checkbox" name="cbkterminos" id="cbkterminos"></td>
+                                <td>&nbsp;</td>
+                                <td valign="top">
+                                    <div class="col-xs-12">
+                                        <spam style="color:white;">
+                                            <a id="terminos" onclick="terminosC()">
+                                                Acepta las políticas de privacidad<br>
+                                            </a>
+                                        </spam>
+                                        </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+                    </div>
+                
+                <div class="form-group" style="text-align:center"> <button id="btnRegistrar" class="fondoGris" data-role="button" onclick="llamarregistro();">Registrarse</button>                    
+                </div>
+            </div>
+        </div>
+</div>

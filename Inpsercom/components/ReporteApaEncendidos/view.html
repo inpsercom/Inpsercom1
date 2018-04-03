@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<div data-role="view" data-title="Reporte Tiempo Recorrido" data-layout="main" data-model="app.reporteApaEnces" data-show="app.reporteApaEnces.onShow"
+    data-after-show="app.reporteApaEnces.afterShow" id="reporteApaEncesScreen" class="screen" data-before-show="app.reporteApaEnces.inicializa">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+        <h1><b><span id="NoOrdenAE" class="km-view-subtitle"></span></b></h1>
+            <a data-role="button" href="#appDrawer"
+                data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <a data-align="right" class="fa fa-reply" onclick="regresaAE()" aria-hidden="true" data-role="button"></a>
+            <!--<a data-align="right" class="fa fa-sign-out" onclick="logoutMenu()" aria-hidden="true" data-role="button"></a>href="components/MenuAlertas/view.html"--></div>
+    </header>
+    <div data-role="content">
+        <!--<div class="container fondoRojoLogin">-->
+            <form class="form-horizontal">
+                <table style="text-align: center;">
+                    <tr>
+                        <td>
+                            <div class="form-group"><b>Fecha Inicio</b>
+                                <div class="col-xs-12"><input class="Fields" id="FechaInicioAE" style="width: 75%;" align="center" placeholder="Fecha Inicio" onkeyup="javascript:this.value='';"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group"><b>Fecha Fin</b>
+                                <div class="col-xs-12"><input id="FechaFinAE" class="Fields" align="center" placeholder="Fecha Fin" onkeyup="javascript:this.value='';"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <div class="form-group"> <button id="btnConsultarAE" class="btn btn-danger fondoRojoLogin" data-role="button" onclick="llamarcoordenadasAE();">Consulta</button></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        <!--</div>-->
+        <div id="listViewAE"></div>
+    </div>
+</div>
+<!--<style>
+    .fondoRojoLogin {
+        background-color: #bb162b; // #ff4350;
+    }
+    .Fields {
+	background-color: #E9E9E9;
+	border: 2px solid #A8A8A8;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+    color: black;
+}
+</style>-->
